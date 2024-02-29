@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  *
  * @author Jonathan
  */
-public interface LibroDao extends JpaRepository<Libro,Long>{
-
+public interface LibroDao extends JpaRepository <Libro,Long> {
+    
 }

@@ -20,15 +20,16 @@ public class Libro implements Serializable {
     private Long id;
     private String titulo;
     private String autor;
-    private int precio;
+    private double precio;
     private String categoria;
-    private boolean activo;
 
     public Libro() {
     }
 
-    public Libro(String libro,String autor,int precio,String categoria, boolean activo) {
-        this.titulo = libro;
-        this.activo = activo;
+    public Libro(String titulo, String autor, double precio, String categoria) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.precio = precio;
+        this.categoria = categoria;
     }
 }

@@ -18,13 +18,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LibroController {
     
     @Autowired
-    private LibroService libroService;
+    private LibroService LibroService;
 
     @GetMapping("/listado") //este es el API
     public String inicio(Model model) {
-        var libros = libroService.getLibros(false);//ese getCategorias se sacan los datos de la variable que se llamaba
-        model.addAttribute("libros", libros);//el primero es el nombre que se le esta dando, es segundo es la variable 
-        model.addAttribute("totalLibros", libros.size());//.size le dice el tamaño que trae esa lista
+        var libro = LibroService.getLibro(false);
+        model.addAttribute("libros", libro);//el primero es el nombre que se le esta dando, es segundo es la variable 
+        model.addAttribute("totallibros", libro.size());//.size le dice el tamaño que trae esa lista
         return "/libro/listado";
     }
 }//final de la clase

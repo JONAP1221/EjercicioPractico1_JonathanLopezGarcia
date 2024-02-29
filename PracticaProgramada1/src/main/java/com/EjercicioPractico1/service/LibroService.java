@@ -8,6 +8,7 @@ import java.util.List;
  * @author Jonathan
  */
 public interface LibroService {
-
-    public List<Libro> getLibros(boolean activos);
+    
+    public List<Libro> getLibro(boolean activos);
+ 
 }
