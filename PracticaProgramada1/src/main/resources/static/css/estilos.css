@@ -70,3 +70,18 @@ tbody tr:nth-child(even) {
     background-color: black;
     color: white
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    width: 1000px !important;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    width: 1000px !important;
+}
+th {
+    background-color: #f2f2f2;
+}
